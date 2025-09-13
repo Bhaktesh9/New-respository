@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HTML5 Practical — Extras</title>
-    <meta name="description" content="Tables, details, dialog, progress, and meter examples.">
+    <title>HTML5 Practical — About</title>
+    <meta name="description" content="About page: history and structure examples.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://<username>.github.io/<repo-name>/extras.html">
+    <link rel="canonical" href="https://<username>.github.io/<repo-name>/about.html">
 </head>
 
 <body>
@@ -14,13 +14,13 @@
 
 
     <header>
-        <h1>Extras — Tables & Interactive Elements</h1>
+        <h1>About this Practical</h1>
         <nav aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="media.html">Media</a></li>
-                <li><a href="extras.html" aria-current="page">Extras</a></li>
+                <li><a href="extras.html">Extras</a></li>
             </ul>
         </nav>
     </header>
@@ -28,36 +28,46 @@
 
     <main id="main">
         <article>
+            <h2>Short History</h2>
             <section>
-                <h2>Tabular Data</h2>
-                <table>
-                    <caption>Weekly Study Plan</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Week</th>
-                            <th scope="col">Topic</th>
-                            <th scope="col">Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>HTML5 Semantics</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Advanced HTML5 APIs</td>
-                            <td>6</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">Total</td>
-                            <td>12</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <h3>Early Web</h3>
+                <p>The Web began as a simple document system and evolved into a multimedia platform.</p>
+                <ul>
+                    <li>1990s: Static pages</li>
+                    <li>2000s: Interactive applications</li>
+                    <li>2010s+: Semantic HTML and accessibility focus</li>
+                </ul>
             </section>
 
-</html>
+
+            <section>
+                <h3>Learning Outcomes</h3>
+                <ol>
+                    <li>Understand semantic elements</li>
+                    <li>Embed media with captions</li>
+                    <li>Publish on GitHub Pages</li>
+                </ol>
+            </section>
+
+
+            <section>
+                <h3>Definitions</h3>
+                <dl>
+                    <dt>Semantic HTML</dt>
+                    <dd>HTML that describes the meaning of content (e.g., <code>&lt;article&gt;</code>,
+                        <code>&lt;nav&gt;</code>).
+                    </dd>
+                    <dt>Accessible</dt>
+                    <dd>Content that can be used by people with different abilities.</dd>
+                </dl>
+            </section>
+
+
+            <footer>
+                <p>Return to <a href="index.html">Home</a>.</p>
+            </footer>
+        </article>
+
+            </main>
+        </body>
+    </html>
