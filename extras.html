@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HTML5 Practical — About</title>
-    <meta name="description" content="About page: history and structure examples.">
+    <title>HTML5 Practical — Media</title>
+    <meta name="description" content="Responsive images, audio, and video with captions.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://<username>.github.io/<repo-name>/about.html">
+    <link rel="canonical" href="https://<username>.github.io/<repo-name>/media.html">
 </head>
 
 <body>
@@ -14,12 +14,12 @@
 
 
     <header>
-        <h1>About this Practical</h1>
+        <h1>Media Demonstrations</h1>
         <nav aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
-                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html" aria-current="page">Media</a></li>
                 <li><a href="extras.html">Extras</a></li>
             </ul>
         </nav>
@@ -28,46 +28,45 @@
 
     <main id="main">
         <article>
-            <h2>Short History</h2>
-            <section>
-                <h3>Early Web</h3>
-                <p>The Web began as a simple document system and evolved into a multimedia platform.</p>
-                <ul>
-                    <li>1990s: Static pages</li>
-                    <li>2000s: Interactive applications</li>
-                    <li>2010s+: Semantic HTML and accessibility focus</li>
-                </ul>
-            </section>
+            <h2>Responsive Image</h2>
 
 
-            <section>
-                <h3>Learning Outcomes</h3>
-                <ol>
-                    <li>Understand semantic elements</li>
-                    <li>Embed media with captions</li>
-                    <li>Publish on GitHub Pages</li>
-                </ol>
-            </section>
+            <figure>
+                <picture>
+                    <source srcset="assets/images/hero-large.jpg" media="(min-width: 1000px)">
+                    <source srcset="assets/images/hero-medium.jpg" media="(min-width: 600px)">
+                    <img src="assets/images/hero-sample.jpg" alt="A descriptive view of the campus innovation hub">
+                </picture>
+                <figcaption>Responsive image using the <code>&lt;picture&gt;</code> element.</figcaption>
+            </figure>
 
 
-            <section>
-                <h3>Definitions</h3>
-                <dl>
-                    <dt>Semantic HTML</dt>
-                    <dd>HTML that describes the meaning of content (e.g., <code>&lt;article&gt;</code>,
-                        <code>&lt;nav&gt;</code>).
-                    </dd>
-                    <dt>Accessible</dt>
-                    <dd>Content that can be used by people with different abilities.</dd>
-                </dl>
-            </section>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="assets/audio/sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <h2>Video with Captions</h2>
+            <video controls width="640" poster="assets/images/hero-medium.jpg">
+                <source src="assets/video/sample.mp4" type="video/mp4">
+                <source src="assets/video/sample.webm" type="video/webm">
+                <track src="assets/captions/sample.vtt" kind="captions" srclang="en" label="English" default>
+                Sorry, your browser doesn't support embedded videos.
+            </video>
 
 
             <footer>
-                <p>Return to <a href="index.html">Home</a>.</p>
+                <p>Back to <a href="index.html">Home</a>.</p>
             </footer>
         </article>
+    </main>
 
-            </main>
-        </body>
-    </html>
+
+    <footer>
+        <p>&copy; <time datetime="2025">2025</time>Bhaktesh Patel</p>
+    </footer>
+</body>
+
+</html>
